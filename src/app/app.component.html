@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+    <title>QuiZCrack</title>
+  </head>
+  <body>
+    <!--Navbar-->
+    <nav class="navbar navbar-light sticky-top flex-md-nowrap p-0" style="background-color:cornflowerblue;">
+      <a class="navbar-brand col-sm-3 col-md-2 mr-0" >
+        <img src="assets/img/QuiZCracK-logos_transparent.png" class="img-fluid" alt="...">
+      </a>
+      <ul class="navbar-nav px-3">
+        <li class="nav-item text-nowrap">
+          <a class="nav-link" href="#">Sign out</a>
+        </li>
+      </ul>
+    </nav>      
+  <!--SideBar-->
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+          <div class="sidebar-sticky">
+            <ul class="nav flex-column">
+              <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+                <a class="nav-link " routerLink="/">
+                  <span class="bi bi-house-fill"></span>
+                    Home 
+                </a>
+              </li>
+              <li class="nav-item" routerLinkActive="active">
+                <a class="nav-link" routerLink="/manage-category">
+                  <span class="bi bi-folder-fill"></span>
+                  Manage Categories
+                </a>
+              </li>
+              <li class="nav-item" routerLinkActive="active">
+                <a class="nav-link" routerLink="/manage-questions">
+                  <span class="bi bi-question-diamond-fill"></span>
+                  Manage Questions
+                </a>
+              </li>
+              <li class="nav-item"  routerLinkActive="active">
+                <a class="nav-link" routerLink="/buildquiz">
+                  <span class="bi bi-plus-square-fill"></span>
+                  Build a Quiz
+                </a>
+              </li>
+              <li class="nav-item" routerLinkActive="active">
+                <a class="nav-link" routerLink="/takequiz">
+                  <span class="bi bi-puzzle-fill"></span>
+                  Take a Quiz
+                </a>
+              </li>
+              <li class="nav-item" routerLinkActive="active">
+                <a class="nav-link" routerLink="/activity">
+                  <span class="bi bi-pencil-square"></span>
+                  Activity
+                </a>
+              </li>
+              
+            </ul>
+          </div>
+        </nav>
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
+              <router-outlet></router-outlet> 
+        </main>
+      </div>
+    </div>
+  </body>
